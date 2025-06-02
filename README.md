@@ -28,9 +28,10 @@ Para manter as coisas simples, aqui vão algumas recomendações técnicas:
 
 ### ✅ Entrega
 
-A entrega final deve ser um [pull request](https://help.github.com/articles/creating-a-pull-request/) neste repositório, contendo na descrição quaisquer informações que achar relevante passar para a empresa e para quem vai revisar seu código.
+<!-- A entrega final deve ser um [pull request](https://help.github.com/articles/creating-a-pull-request/) neste repositório, contendo na descrição quaisquer informações que achar relevante passar para a empresa e para quem vai revisar seu código.
 
-Quando tiver finalizado, fale com a gente.
+Quando tiver finalizado, fale com a gente. -->
+A entrega final deve ser um **repositório do github**, contendo na **README** quaisquer informações que achar relevante passar para a empresa e para quem vai revisar seu código. O repositório precisa ser público , e deve nos encaminhar o link para o e-mail **contato@energienutricao.com.br** com assunto: **Teste Estágio TI**
 
 ### ⏳ Tempo
 
