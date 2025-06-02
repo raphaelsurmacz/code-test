@@ -34,7 +34,7 @@ O link para o repositório deve ser enviado para o e-mail **contato@energienutri
 
 ### ⏳ Tempo
 
-Pedimos para que você trabalhe em torno de 5 horas nesse teste (sem contar qualquer necessidade de pesquisa ou setup), e que complete em até 3 dias, a partir da data que receber este teste. Não gaste uma semana inteira de trabalho neste teste. Nós não queremos tomar todo o seu tempo.
+Pedimos para que você trabalhe em torno de 5 horas nesse teste (sem contar qualquer necessidade de pesquisa ou setup), e que complete em até 3 dias, a partir da data que receber este teste. Não gaste todos os dias neste teste. Nós não queremos tomar todo o seu tempo.
 
 Se você achar que o teste está tomando mais tempo do que o sugerido, aqui vão algumas dicas:
 
@@ -44,14 +44,14 @@ Se você achar que o teste está tomando mais tempo do que o sugerido, aqui vão
 * Não gaste tempo tentando entender todo o código fonte. Recomendamos que teste o sistema, faça um "scan" rápido e em seguida parta para as alterações.
 * Planeje alocar um tempo para cada passo do desafio antes de iniciar, e adote uma ideia de "timeboxing". Para explicar, timeboxing é a ideia de você cronometrar suas tarefas, e se uma tarefa estiver tomando mais tempo do que o esperado inicialmente, você começa a focar em outra coisa e evita ficar estagnado em um único trecho do código.
 * Priorize suas tarefas, faça o mais importante primeiro e deixe os pontos "legais de se ter" pra caso sobre tempo.
-* Recomendamos que faça os commits diretamente neste repositório para evitar trabalho duplicado. Não é necessário "ensaiar" os commits em um fork ou em seu local. Commits descritivos e significativos são importantes, mas também queremos ver como você chega lá.
+* Commits descritivos e significativos são importantes, mas também queremos ver como você chega lá.
 * Lembre-se que esse é um projeto fictício. Ao mesmo tempo que é importante levar em conta situações e problemas reais no seu código, não é necessário gastar tempo com soluções muito complexas.
 
 ## 🙋 FAQ
 
 *1. Eu tenho dúvidas sobre a solução, devo fazer deste jeito ou deste outro jeito?*
 
-Parte da avaliação é ver como você lida com uma especificação como esta. Implemente uma solução que atenda ao problema e documente suas decisões no pull request.
+Parte da avaliação é ver como você lida com uma especificação como esta. Implemente uma solução que atenda ao problema e documente suas decisões no README do seu projeto.
 
 *2. Não estou familiarizado com todas as tecnologias. O que fazer?*
 
@@ -67,36 +67,43 @@ Faça o clone do projeto, renomeie o arquivo .env.example para .env, e altere es
 
 Em seguida, execute os seguintes comandos na pasta raíz do projeto:
 
-1. Para instalar as dependências do projeto:
+1. Para instalar as dependências do projeto: 
 
-composer install
+```
+    composer install
+```
 
-
-npm install
+```
+    npm install
+```
 
 
 2. Carregar o arquivo .env no cache:
 
-php artisan config:cache
-
+```
+    php artisan config:cache
+```
 
 3. Para criar o banco de dados e registros de teste:
 
-php artisan migrate
-
-
-php artisan db:seed
-
+```
+    php artisan migrate
+```
+```
+    php artisan db:seed
+```
 
 4. Para executar o projeto:
 
-php artisan serve
-
+```
+    php artisan serve
+```
 
 5. Em outra aba do terminal, utilize o comando:
 
-npm run watch
-
+```
+    npm run watch
+```
 
 O comando watch vai assistir a pasta do seu projeto e recarregar automaticamente o navegador em localhost:3000 quando houver alguma alteração, além de compilar os arquivos JavaScript e SCSS para dentro de public.
 
