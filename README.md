@@ -29,8 +29,7 @@ Para manter as coisas simples, aqui vão algumas recomendações técnicas:
 
 ### ✅ Entrega
 
-A entrega final deve ser um **repositório do github**, contendo no **README** quaisquer informações que achar relevante passar para a empresa e para quem vai revisar seu código. O repositório precisa ser público. 
-O link para o repositório deve ser enviado para o e-mail **contato@energienutricao.com.br** com assunto: **Teste Estágio TI**
+A entrega final deve ser um **repositório do github**, contendo no **README** quaisquer informações que achar relevante passar para a empresa e para quem vai revisar seu código. O repositório precisa ser público.
 
 ### ⏳ Tempo
 
