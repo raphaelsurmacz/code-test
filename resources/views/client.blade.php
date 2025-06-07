@@ -82,7 +82,14 @@
 							<tbody>
 								@foreach (auth()->User()->Patient()->where('name', '!=', null)->get() as $patient)
 									<tr>
-										<td><img src="" class="radius" width="40"></td>
+										@if($patient->picture)
+											<td>
+												<img src="{{ asset('storage/' . $patient->picture) }}" class="rounded-circle" width="50">
+										@else
+											<td>
+												<img src="{{ asset('images/dog.jpg') }}" class="rounded-circle" width="50">
+										@endif
+											</td>
 										<td>{{ $patient->name }}</td>
 										<td>{{ $patient->getAge() }}</td>
 										<td>{{ $patient->birthdate->format('d/m/Y') }}</td>

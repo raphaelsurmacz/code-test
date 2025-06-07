@@ -19,7 +19,8 @@ class Patient extends Model {
         'user_id',
         'name',
 		'gender',
-		'birthdate'
+		'birthdate',
+		'picture',
 	];
 
 	protected $dates = [

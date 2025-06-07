@@ -39,7 +39,18 @@ class SiteController extends Controller {
 
 	public function postEditPatient($patient_id, Request $request) {
 		$patient = Patient::find($patient_id);
+		$request->validate([
+			'name' => 'required|string',
+			'breed' => 'required|string',
+			'birthdate' => 'required|date_format:d/m/Y',
+			'picture' => 'required|image|max:2048'
+		]);
+		$data = $request->except('birthdate', 'picture');
 		$data = array_merge($request->except('birthdate'), [ 'birthdate' => Carbon::createFromFormat('d/m/Y', $request->birthdate) ]);
+
+		if ($request->hasFile('picture')){
+			$data['picture'] = $request->file('picture')->store('patients','public');
+		}
 
 		$patient->update( $data );
 
